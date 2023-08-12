@@ -78,17 +78,21 @@ typing_space = Text(font=('Arial', 14,'normal'),
                     highlightbackground=border_color, highlightthickness=4)
 typing_space.bind('<KeyPress>', time_calculation)
 
-reset = Button(text='Reset', font=('Arial', 10, 'normal'),
+reset = Button(text='Reset', font=('Arial', 16, 'normal'),
                bg=background_color, fg=foreground_color, border=3,
                highlightbackground=foreground_color,
                highlightcolor=foreground_color,
-               width=50,
+               pady=6,
+               padx=6,
+               width=30,
                command=reset_app,
                highlightthickness=0)
 save = Button(text='Save',
-              width=50,
+              width=30,
               command=save_text,
-              font=('Arial', 10, 'normal'), bg=background_color,
+              pady=6,
+              padx=6,
+              font=('Arial', 16, 'normal'), bg=background_color,
               fg=foreground_color, border=3, highlightbackground=foreground_color,
               highlightcolor=foreground_color, highlightthickness=0)
 
